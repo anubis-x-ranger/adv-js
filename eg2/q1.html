@@ -5,33 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      .container{
-        display:flex;
-        }
-      .buttons{
-        display:grid;
-        grid-gap:20px;
-        width:50%;
-        margin:auto;
-        margin-left:0px;
-        background:teal;
-        padding-top:20px;
-        padding-bottom:20px;
-        }
-        .buttons> button:nth-child(n){
-            width:20%;
-            margin:auto;
-            border-radius:5px;
-            border:1px solid black;
-            }
-        .details{
-            width:50%;
-            background-color:seagreen;
-            color:white;
-            font-size: 24px;
-            }  
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
@@ -49,38 +23,6 @@
           <ul id="info"></ul>
         </div>
       </div>
-      <script>
-        function showData(choice){
-          document.getElementById('info').innerHTML="";
-          if(choice=="object"){
-            let li = document.createElement('li');
-            li.textContent = 'Object is a Non-primitive datatype';
-            var info = document.querySelector('#info');
-            info.appendChild(li);
-
-            li = document.createElement('li');
-            li.textContent = 'All JavaScript values, except primitives, are objects ';
-            info.appendChild(li);
-            
-            li = document.createElement('li');
-            li.textContent = 'The named values, in JavaScript objects, are called properties.';
-            info.appendChild(li);
-          }else if(choice=="arrays"){
-            
-            let li = document.createElement('li');
-            li.textContent = 'It is a Non-primitive datatype';
-            var info = document.querySelector('#info');
-            info.appendChild(li);
-
-            li = document.createElement('li');
-            li.textContent = 'All JavaScript values, except primitives, are objects ';
-            info.appendChild(li);
-            
-            li = document.createElement('li');
-            li.textContent = 'The named values, in JavaScript objects, are called properties.';
-            info.appendChild(li);
-          }
-        }
-      </script>  
+      <script src="./script.js"></script>  
 </body>
 </html>
