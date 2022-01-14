@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  margin: auto;
+  height: 100px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: #f3f334;
+  border: 10px solid #f3f334;
+  transform: translate(600px, 250px);
+}
